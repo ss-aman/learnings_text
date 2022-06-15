@@ -1,0 +1,38 @@
+teraform
+
+components like - vpc, security groups, VMs (1-100), load balancer, || DNS mapping, CDN, content delivery network, monitor
+
+teraform config - 
+	
+refresh -
+
+plan - 
+
+apply
+
+destroy
+
+----------
+
+architecutre
+
+
+teraform config +  state  ->  core (monolithic core) -> IaAS (aws, google cloud) + Paas(Heroku, kubernatics, Lamda) + Saas (DataDog monitor, fastway CDN, Github teams)
+
+Iaas + Paas + Saas
+
+------------
+
+
+
+
+group in git  - > enterprise
+
+protection over creds
+
+state managed as central repo
+
+make config file from enterprise edition easily
+
+all of them give api docs
+

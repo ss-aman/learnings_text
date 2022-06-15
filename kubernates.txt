@@ -1,0 +1,42 @@
+kubernates
+	what is it
+	k8s architecture
+	k8s main components
+	mini kube and kubectl
+	main kubectl command 
+	k8s YAML config file
+
+	k8s namespaces
+	k8s ingress
+	helm package manager
+
+	volumes - persisting data in k8s
+	k8s statefulset - deploying stateful apps
+	k8s services
+
+
+-> what is it
+k8s open source container orchestration framework
+container manage in physical or virtual or cloud  or in hybrid 
+
+- > what problem k8s solve
+high availability no downtime
+scalability or high performance
+disaster recovery backup and restore
+
+
+-> k8s components
+ devops and software devp
+pod - an abstraction over a container, running environment or layer
+		one container inside one contaier, runs multiple container only if other containers are dependent over it
+		gives virtual network, each pod gets its ip address, 
+		container crash and die -> pod crash -> new pod -> new ip -> solution is "service"
+
+service -> service and pod life cycle aren't connected
+		external and internal service
+		service-ip:port
+
+		url should be a name -> solution -> ingress
+
+
+ingress -> first request to ingress then forward to service

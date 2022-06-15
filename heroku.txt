@@ -1,0 +1,52 @@
+heroku
+
+heroku login
+
+heroku git:remote -a <app_name>
+
+git add, commit, push master
+
+heroku open
+
+
+-------------
+
+
+
+
+lambda Examples
+---------------
+
+API gateway integration 	->	 Lambda 	-> 		S3 | DynamoDB
+
+
+serverless cronjob
+
+	cloudwatch -> lambda
+	on different timings and with different arguments
+
+
+
+#3 event processing with SNS and SQS
+	SNS -> simple notification service
+		pub-sub service
+
+	SQS -> simple queue service
+
+
+File upload processing with S3
+
+	upload trigger ->  invoke lambda ->  
+
+	S3 triggers -> data processing, kenisis fire holes, 
+
+
+step function - glue logic
+
+	processing credit card tx -> 
+
+	pin validation service -> 
+
+	lambda chain -> pin validation -> tx executor -> 
+
+
