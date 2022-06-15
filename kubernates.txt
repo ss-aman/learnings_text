@@ -40,3 +40,45 @@ service -> service and pod life cycle aren't connected
 
 
 ingress -> first request to ingress then forward to service
+
+
+# url where configure -> properties file, environment var, inside the built image of server.
+
+# pull image -> restart. rebuild->push to repo->pull it in your repo 
+
+
+external configurations -> using configmap and secrets
+
+-> configmap -> external configuration to application
+			pods gets data which config map contains
+
+-> secret -> base 64 encoded, secret config data
+
+@Data Storage
+
+-> Volume for persisted data storage
+	just maps the specific physical hardware storage mapped with pod, own premisis storage.
+	but we have to set all things, backing up, replicating, sync
+
+	or on remote 
+	k8s cluster, all components and sotrage
+	we are replicating things on multiple servers
+
+@ we have to create replicas
+	- Database replicas stateful
+
+
+@ stateful set -> instead of replicating try StateFul
+
+@Replicating mechanism -> Deployment and StatefulSet
+
+
+---
+@architecture 
+
+-> StateFul
+
+-> Service -> static ip address
+				load balancer
+
+
